@@ -15,5 +15,5 @@ The implementation has been modularized into different files
 2. `terraform fmt ` 
 3. `terraform validate` 
 4. `terraform plan` 
-5. `terraform apply` 
-6. Eventually, once the environment is tested correctly, clean up with `terraform destroy`
+5. `terraform apply -auto-approve` 
+6. Eventually, once the environment is tested correctly, clean up with `terraform destroy -auto-approve`
