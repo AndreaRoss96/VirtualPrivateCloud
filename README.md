@@ -12,8 +12,8 @@ The implementation has been modularized into different files
 ## 2. How to Run
 0. Make sure aws cli is configured correctly and in `eu-west-1`
 1. `terraform init` Initialize configuration
-2. `terraform fmt ` 
-3. `terraform validate` 
-4. `terraform plan` 
-5. `terraform apply -auto-approve` 
+2. `terraform fmt` Command formats Terraform configuration file contents so that it matches the canonical format and style.
+3. `terraform validate` Command validates the configuration of (only) Terraform files.
+4. `terraform plan`  creates an execution plan that Terraform uses to make changes to the infrastracture.
+5. `terraform apply -auto-approve` the flag is to avoid typing `yes` during the command execution.
 6. Eventually, once the environment is tested correctly, clean up with `terraform destroy -auto-approve`
