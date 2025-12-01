@@ -1,3 +1,6 @@
+# Custom
+*.terraform*
+
 # Local .terraform directories
 .terraform/
 
