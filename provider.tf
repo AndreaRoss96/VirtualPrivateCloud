@@ -13,7 +13,7 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Project     = "TerraformAssignment2025"
+      Project     = "VPC_IaC_Assignment"
       Environment = "Dev"
       ManagedBy   = "Terraform"
     }
