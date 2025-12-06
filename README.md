@@ -8,6 +8,7 @@ The implementation has been modularized into different files
 - **security.tf**: Security Groups.
 - **compute.tf**: EC2 Instances.
 - **outputs.tf**: Output the Load Balancer DNS name/Instance IPs.
+- **.github/workflows/terraform.yml**: Configuration for GitHub Actions.
 
 ## 2. How to Run
 0. Make sure aws cli is configured correctly and in `eu-west-1`
