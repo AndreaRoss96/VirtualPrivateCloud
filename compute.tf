@@ -42,7 +42,7 @@ resource "aws_lb" "main_alb" {
   subnets            = aws_subnet.public[*].id
 
   tags = {
-    Name = "main-alb"
+    Name = "startup_vpc-alb"
   }
 }
 
@@ -51,7 +51,7 @@ resource "aws_lb_target_group" "web_tg" {
   name     = "web-target-group"
   port     = 80
   protocol = "HTTP"
-  vpc_id   = aws_vpc.main.id
+  vpc_id   = aws_vpc.startup_vpc.id
 
   health_check {
     path = "/"
