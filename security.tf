@@ -2,7 +2,7 @@
 resource "aws_security_group" "alb_sg" {
   name        = "alb-security-group"
   description = "Allow HTTP inbound traffic to ALB"
-  vpc_id      = aws_vpc.main.id
+  vpc_id      = aws_vpc.startup_vpc.id
 
   # Inbound Rule: Allow HTTP from anywhere
   ingress {
@@ -30,7 +30,7 @@ resource "aws_security_group" "alb_sg" {
 resource "aws_security_group" "web_sg" {
   name        = "web-server-sg"
   description = "Security group for web servers"
-  vpc_id      = aws_vpc.main.id
+  vpc_id      = aws_vpc.startup_vpc.id
 
   # Inbound: Allow HTTP only from the ALB for secuirty
   ingress {
